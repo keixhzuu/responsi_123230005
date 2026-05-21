@@ -26,7 +26,7 @@ class ProfileView extends StatelessWidget {
             onPressed: () {
               Get.offAllNamed('/login');
               Get.snackbar(
-                "LogOut",
+                "Logout",
                 "Berhasil Logout!",
                 backgroundColor: const Color(0xFFA6332E),
                 colorText: const Color.fromARGB(255, 255, 255, 255),
