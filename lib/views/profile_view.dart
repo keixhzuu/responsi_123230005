@@ -20,6 +20,21 @@ class ProfileView extends StatelessWidget {
           icon: const Icon(Icons.arrow_back, color: Color(0xFFF5E6CA)),
           onPressed: () => Get.offAllNamed('/books'),
         ),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.logout, color: Color(0xFFF5E6CA)),
+            onPressed: () {
+              Get.offAllNamed('/login');
+              Get.snackbar(
+                "LogOut",
+                "Berhasil Logout!",
+                backgroundColor: const Color(0xFFA6332E),
+                colorText: const Color.fromARGB(255, 255, 255, 255),
+                icon: const Icon(Icons.auto_fix_normal),
+              );
+            },
+          ),
+        ],
       ),
       body: Center(
         child: Column(
@@ -33,7 +48,7 @@ class ProfileView extends StatelessWidget {
             ),
             const SizedBox(height: 10),
             Text(
-              "Gak tau, cuma mau makan",
+              "oke mantap, aku cuma mau makan",
               style: const TextStyle(fontSize: 16, color: Colors.grey),
             ),
           ],
