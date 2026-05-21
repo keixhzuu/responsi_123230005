@@ -48,8 +48,19 @@ class ProfileView extends StatelessWidget {
             ),
             const SizedBox(height: 10),
             Text(
-              "oke mantap, aku cuma mau makan",
-              style: const TextStyle(fontSize: 16, color: Colors.grey),
+              "Kesan: oke mantap, seadanya aja sebisanya aja yang penting jalan",
+              style: const TextStyle(
+                fontSize: 16,
+                color: Color.fromARGB(255, 0, 0, 0),
+              ),
+            ),
+            const SizedBox(height: 10),
+            Text(
+              "Pesan: Nuwun ra angel-angel, semoga bisa lebih baik lagi kedepannya",
+              style: const TextStyle(
+                fontSize: 16,
+                color: Color.fromARGB(255, 0, 0, 0),
+              ),
             ),
           ],
         ),
